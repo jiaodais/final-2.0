@@ -1,0 +1,8 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\startup_lpc11xx.o"
+".\objects\system_lpc11xx.o"
+--strict --scatter ".\Objects\LCD1602.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\LCD1602.map" -o .\Objects\LCD1602.axf
